@@ -90,3 +90,37 @@ function numeroPar(num){
 }
 
 numeroPar(2)
+
+console.log('5 - TypeOf')
+
+function getTypeOfData(data){
+    return typeof data
+}
+
+console.log(getTypeOfData(20));
+console.log(getTypeOfData("Hello"));
+console.log(getTypeOfData(true));
+console.log(getTypeOfData([10, 20, 30]));
+
+console.log('6 - Event Scroll')
+
+function addScrollEvent() {
+    function handleScrollEvent() {
+      console.log('Está scrollando!');
+    }
+  
+    // Verifica se o navegador suporta o evento de scroll
+    if ('onscroll' in window) {
+      // Adiciona o evento de scroll e chama a função handleScrollEvent quando ocorrer o evento
+      window.addEventListener('scroll', handleScrollEvent);
+    } else {
+      // Caso o navegador não suporte o evento de scroll, trata o erro ou avisa o usuário
+      console.log('Seu navegador não suporta o evento de scroll.');
+    }
+  }  
+
+  addScrollEvent();
+
+  function isTruthy(dado){
+      return !!dado;
+  }
