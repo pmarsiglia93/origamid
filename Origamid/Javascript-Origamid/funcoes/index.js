@@ -124,3 +124,14 @@ function addScrollEvent() {
   function isTruthy(dado){
       return !!dado;
   }
+
+  var totalPaises = 193
+
+  function precisoVisitar(paisesVisitados){
+      return `Ainda faltam ${totalPaises - paisesVisitados} paises para visitar` 
+  }
+
+  function jaVisitei(paisesVisitados){
+      return `Já visitei ${paisesVisitados} do total de ${totalPaises} paises`;
+  }
+
